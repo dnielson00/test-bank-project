@@ -20,3 +20,5 @@ I'd like to revist some application of this some day, especially as LMMs and sim
 
 # How it Works
 there is a main controller file that orchestrates everything, if you are reading through the code base, start there. It reads two separate files, the test bank itself as well as the chapter it is trying to verify with. the test bank was divided into blocks for each question, as well as blocks for each subchapter (e.g. chapter 1 subchapter 1, chapter 1 subchapter 2, etc). They then get passed to other functions for processing, which includes openai's gpt-3.5-turbo. 
+
+the user would change the name of the pdf and txt files in the main controller and make sure everything was all in the same folder, then they would run the program, which when it is finished it will output as a .csv for the user to review. from there they would (ideally) know what the problem areas are that would need human review
